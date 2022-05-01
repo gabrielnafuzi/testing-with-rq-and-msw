@@ -1,0 +1,22 @@
+export const usersMock = [
+  {
+    login: 'user-login-1',
+    id: 1,
+    node_id: 'user-node_id-1',
+    avatar_url: 'user-avatar_url-1',
+    gravatar_id: 'user-gravatar_id-1',
+    url: 'user-url-1',
+    html_url: 'user-html_url-1',
+    followers_url: 'user-followers_url-1',
+    following_url: 'user-following_url-1',
+    gists_url: 'user-gists_url-1',
+    starred_url: 'user-starred_url-1',
+    subscriptions_url: 'user-subscriptions_url-1',
+    organizations_url: 'user-organizations_url-1',
+    repos_url: 'user-repos_url-1',
+    events_url: 'user-events_url-1',
+    received_events_url: 'user-received_events_url-1',
+    type: 'user-type-1',
+    site_admin: false,
+  },
+]
