@@ -24,7 +24,7 @@ specifiers:
   prettier: ^2.6.2
   react: ^18.0.0
   react-dom: ^18.0.0
-  react-query: ^3.38.0
+  react-query: ^4.0.0-beta.7
   react-test-renderer: ^18.1.0
   typescript: ^4.6.3
   vite: ^2.9.5
@@ -34,7 +34,7 @@ dependencies:
   axios: 0.27.2
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
-  react-query: 3.38.0_react-dom@18.1.0+react@18.1.0
+  react-query: 4.0.0-beta.7_react-dom@18.1.0+react@18.1.0
 
 devDependencies:
   '@testing-library/jest-dom': 5.16.4
@@ -599,6 +599,10 @@ packages:
     dependencies:
       '@types/jest': 27.4.1
     dev: true
+
+  /@types/use-sync-external-store/0.0.3:
+    resolution: {integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==}
+    dev: false
 
   /@typescript-eslint/eslint-plugin/5.21.0_ade6595cb7be1524e723c025c098ae5d:
     resolution: {integrity: sha512-fTU85q8v5ZLpoZEyn/u1S2qrFOhi33Edo2CZ0+q1gDaWWm0JuPh3bgOyU8lM0edIEYgKLDkPFiZX2MOupgjlyg==}
@@ -2806,8 +2810,8 @@ packages:
     resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
     dev: true
 
-  /react-query/3.38.0_react-dom@18.1.0+react@18.1.0:
-    resolution: {integrity: sha512-VRbCTRrDfC5FsB70+JfZuxFRv9SAvkZ1h36MsN8+QaDN+NWB6s1vJndqpoLQnJqN0COTG2zsInMq0KFdYze6TA==}
+  /react-query/4.0.0-beta.7_react-dom@18.1.0+react@18.1.0:
+    resolution: {integrity: sha512-hovLEuiOfEPnQAJ3yfIK9qoW1fFdf7BQ9Wn7ALPueIO1McBhCMqtwEWHxL6DSKk8bgeDjMFBzDnZmQPXCiq7VA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: '*'
@@ -2819,10 +2823,12 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.17.9
+      '@types/use-sync-external-store': 0.0.3
       broadcast-channel: 3.7.0
       match-sorter: 6.3.1
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
+      use-sync-external-store: 1.1.0_react@18.1.0
     dev: false
 
   /react-refresh/0.12.0:
@@ -3312,6 +3318,14 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: true
+
+  /use-sync-external-store/1.1.0_react@18.1.0:
+    resolution: {integrity: sha512-SEnieB2FPKEVne66NpXPd1Np4R1lTNKfjuy3XdIoPQKYBAFdzbzSZlSn1KJZUiihQLQC5Znot4SBz1EOTBwQAQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.1.0
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}

@@ -11,10 +11,10 @@ export const getUsers = async () => {
 }
 
 export const useUsers = (
-  options?: UseQueryOptions<User[], unknown, User[], 'users'>
+  options: UseQueryOptions<User[], unknown, User[], ['users']> = {}
 ) => {
-  return useQuery('users', getUsers, {
-    staleTime: 1000 * 60 * 60, // 1 hour
-    ...(options ?? {}),
+  return useQuery(['users'], getUsers, {
+    staleTime: 1000 * 60 * 10, // 10 minutes
+    ...options,
   })
 }
