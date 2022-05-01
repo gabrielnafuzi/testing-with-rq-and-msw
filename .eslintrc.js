@@ -45,6 +45,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/no-unused-prop-types': 'error',
     'react/self-closing-comp': 'warn',
+    'react/display-name': 'off',
     'react/jsx-curly-brace-presence': [
       'error',
       {
